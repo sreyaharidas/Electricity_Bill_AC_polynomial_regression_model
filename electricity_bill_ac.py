@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Load the saved Polynomial Regression model
-model = joblib.load("polynomial_regression_model(1).pkl")
+model = joblib.load("polynomial_regression_model.pkl")
 
 st.title("Electric Bill Prediction")
 st.write("Predict the electricity bill based on AC units.")

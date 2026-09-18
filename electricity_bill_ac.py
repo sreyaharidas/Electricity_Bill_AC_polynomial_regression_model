@@ -21,9 +21,9 @@ Fan_Units = st.number_input(
     max_value=200.0,
     value=50.0
 )
-if ac_units<10 or ac_units>105:
+if AC_Units<10 or AC_Units>105:
     st.error("AC units must be between 10 and 105")
-elif fan_units<20 or fan_units>115:
+elif Fan_Units<20 or Fan_Units>115:
     st.error("Fan units must be between 20 and 115")
 # Prediction button
 else:

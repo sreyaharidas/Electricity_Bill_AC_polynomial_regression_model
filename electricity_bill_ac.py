@@ -29,4 +29,4 @@ if st.button("Predict"):
     prediction = model.predict(new_data_poly)
 
     st.success(f"Predicted Electric Bill: ₹{prediction[0]:.2f}")
-```
+

@@ -28,7 +28,7 @@ elif Fan_Units<20 or Fan_Units>115:
 # Prediction button
 else:
     new_data = pd.DataFrame({
-        "AC_Units": [ac_units]
+        "AC_Units": [AC_Units]
     })
 
     # Convert input to polynomial features

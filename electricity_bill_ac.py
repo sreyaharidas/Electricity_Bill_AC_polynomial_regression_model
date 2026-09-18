@@ -15,9 +15,18 @@ ac_units = st.number_input(
     max_value=200.0,
     value=50.0
 )
-
+fan_units = st.number_input(
+    "Enter Number of FAN Units",
+    min_value=0.0,
+    max_value=200.0,
+    value=50.0
+)
+if ac_units<10 or ac_units>105:
+    st.error("AC units must be between 10 and 105")
+elif fan_units<20 or fan_units>115:
+    st.error("Fan units must be between 20 and 115")
 # Prediction button
-if st.button("Predict"):
+else:
     new_data = pd.DataFrame({
         "AC_Units": [ac_units]
     })

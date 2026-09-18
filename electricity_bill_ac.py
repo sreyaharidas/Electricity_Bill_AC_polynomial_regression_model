@@ -9,13 +9,13 @@ st.title("Electric Bill Prediction")
 st.write("Predict the electricity bill based on AC units.")
 
 # User input
-ac_units = st.number_input(
+AC_Units = st.number_input(
     "Enter Number of AC Units",
     min_value=0.0,
     max_value=200.0,
     value=50.0
 )
-fan_units = st.number_input(
+Fan_Units = st.number_input(
     "Enter Number of FAN Units",
     min_value=0.0,
     max_value=200.0,
